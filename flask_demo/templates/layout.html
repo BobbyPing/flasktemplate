@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% block head %}
+    <title>{% block title %} {% endblock %}</div></title>
+    {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <nav>
+        <div><a href="http://localhost:5000">Home Page</a></div>
+        <div><a href="http://localhost:5000/show">Show Page</a></div>
+    </nav>
+    <h1>Welcome to our app sucker!!!!</h1>
+    <div id="content">{% block content %} {% endblock %}</div>
+    <p>Our footer for this page</p>
+    <div id="footer">{% block footer %} {% endblock %}</div>
+</body>
+</html>
